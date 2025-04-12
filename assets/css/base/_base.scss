@@ -46,11 +46,11 @@ a {
 }
 .container {
   padding: 15px;
-  max-width: calc(1920px - (168px + 168px));
+  width: calc(1920px - (168px + 168px));
   margin: 0 auto;
 }
 .container-purple {
   padding-inline: 15px;
-  max-width: calc(1920px - (110px + 110px));
+  width: calc(1920px - (110px + 110px));
   margin: 0 auto;
 }
