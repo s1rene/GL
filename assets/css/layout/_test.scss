@@ -28,7 +28,7 @@
     position: relative;
     z-index: 2;
     width: 600px;
-    height: 308px;
+    height: min(308px, 100%);
     border: 5px solid $primary;
     border-radius: 40px;
     background-color: #ffd00e;
@@ -144,8 +144,21 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .test__block-2 {
+    .block1-container {
+      .blur {
+        display: none;
+      }
+    }
+  }
+}
 @media (max-width: 650px) {
   .test__block-2 {
+    .block1-container::before,
+    .block1-container::after {
+      display: none;
+    }
     .block2-item {
       flex-wrap: wrap;
     }

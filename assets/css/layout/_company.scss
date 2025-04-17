@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 743px;
+    gap: 20px;
 
     h2 {
       display: inline;
@@ -71,8 +72,11 @@
 
 @media (max-width: 768px) {
   .company {
-    &__block-2 {
-      min-width: 300px;
+    &__inner {
+      padding: 80px 10px;
+      .company__block-2 {
+        min-width: 200px;
+      }
     }
 
     &__block-1 {
@@ -80,7 +84,7 @@
         flex-wrap: wrap;
       }
     }
-    .company-brands{
+    .company-brands {
       flex-direction: column;
     }
   }

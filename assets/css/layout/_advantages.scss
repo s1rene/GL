@@ -104,3 +104,16 @@
     }
   }
 }
+@media (max-width: 500px) {
+  .advantages {
+    .advantages__block {
+      .block__inner {
+        padding: 30px 30px;
+      }
+      .block__item{
+        flex-direction: column;
+        text-align: justify;
+      }
+    }
+  }
+}
