@@ -53,11 +53,38 @@
       }
     }
   }
-  .charity-galery{
+  .charity-galery {
     margin-top: 32px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: flex-start;
     gap: 42px;
+    img {
+      min-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .charity-galery {
+    margin-top: 32px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
+
+    img {
+      flex-shrink: 0;
+      width: 90vw;
+      max-width: 420px;
+      height: auto;
+      scroll-snap-align: center;
+      border-radius: 12px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .charity__blocks {
+    flex-wrap: wrap;
   }
 }

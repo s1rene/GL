@@ -25,7 +25,7 @@
       top: -7%;
       left: -7%;
       z-index: 1;
-      background-image: url("../img/Webp/arrows-effect.webp");
+      background-image: url("/assets/img/Webp/arrows-effect.webp");
       background-repeat: no-repeat;
       transform: scaleX(-1);
     }
@@ -92,6 +92,15 @@
     &::before {
       content: "";
       display: none;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .advantages {
+    .blocks {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

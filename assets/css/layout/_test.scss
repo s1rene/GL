@@ -114,3 +114,40 @@
     margin-top: 10px;
   }
 }
+
+@media (max-width: 1400px) {
+  .test__block-2 {
+    .block2-item {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .test__block-1 {
+    display: block;
+    p {
+      width: min(800px, 100%);
+    }
+  }
+  .test__block-2 {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .block1-container {
+      transform: rotate(0deg);
+    }
+  }
+  .test__block-2 {
+    .block2-item {
+      flex-direction: row;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .test__block-2 {
+    .block2-item {
+      flex-wrap: wrap;
+    }
+  }
+}

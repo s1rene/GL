@@ -15,9 +15,10 @@
     justify-content: space-between;
     gap: 48px;
     .partners-block {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
       align-items: center;
+      gap: 20px;
     }
     p {
       margin-top: 32px;

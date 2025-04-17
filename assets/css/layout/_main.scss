@@ -72,3 +72,20 @@
   align-items: center;
   padding-bottom: 31px;
 }
+
+@media (max-width: 1400px) {
+  .main__content{
+    padding-left: 30px;
+  }
+  .main__inner {
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    .block-1 {
+      margin-right: 0;
+    }
+  }
+  .main__bg {
+    display: none;
+  }
+}
