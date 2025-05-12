@@ -1,0 +1,54 @@
+$dark: #000000;
+$sec-dark: #333333;
+$primary: #ffffff;
+$purple-bg: #3f00ff;
+$yellow-btn: linear-gradient(to right, #ffdf00, #ffb800);
+$yellow: #ffd00e;
+$blue: #3bbaff;
+$facebook-bg: #3b5998;
+$instagram-bg: linear-gradient(
+  to bottom right,
+  #7024c4,
+  #c21975,
+  #c74c4d,
+  #e09b3d
+);
+
+$viber-bg: #675da9;
+
+$fz-142: clamp(3.75rem, 2.725rem + 5.13vw, 8.875rem); /* 142 -->60 */
+$fz-90: clamp(2rem, 1.275rem + 3.62vw, 5.625rem); /* 90 --> 32 */
+$fz-72: clamp(2rem, 1.5rem + 2.5vw, 4.5rem); /* 72 --> 32 */
+$fz-64: clamp(2.375rem, 2.05rem + 1.63vw, 4rem); /* 64 --> 44 */
+$fz-28: clamp(1.375rem, 1.325rem + 0.25vw, 1.625rem); /* 28--> 22 */
+$fz-26: clamp(1.375rem, 1.35rem + 0.13vw, 1.5rem); /* 26 --> 20 */
+$fz-24: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem); /* 24 --> 18 */
+$fz-20: clamp(1.125rem, 1.1rem + 0.13vw, 1.25rem); /* 20 --> 18 */
+$fz-16: clamp(0.875rem, 0.85rem + 0.13vw, 1rem); /* 16 --> 14 */
+
+$fw-black: 900;
+$fw-extra-bold: 800;
+$fw-bold: 700;
+$fw-semi-bold: 600;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-light: 300;
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  padding: 15px;
+  max-width: calc(1920px - (168px + 168px));
+  margin: 0 auto;
+}
+.container-purple {
+  padding-inline: 15px;
+  max-width: calc(1920px - (110px + 110px));
+  margin: 0 auto;
+}

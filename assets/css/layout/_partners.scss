@@ -1,0 +1,28 @@
+.partners {
+  margin-bottom: 128px;
+  h2 {
+    font-size: $fz-90;
+    font-weight: $fw-bold;
+    text-align: center;
+    line-height: 1.1;
+    color: $sec-dark;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+  .partners__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+    .partners-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      align-items: center;
+      gap: 20px;
+    }
+    p {
+      margin-top: 32px;
+      text-align: right;
+    }
+  }
+}

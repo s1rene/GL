@@ -1,0 +1,22 @@
+.galery {
+  margin-bottom: 128px;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "" !important;
+}
+
+.bi {
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #333;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}

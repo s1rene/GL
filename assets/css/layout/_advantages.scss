@@ -1,0 +1,119 @@
+.advantages {
+  margin-bottom: 128px;
+  h2 {
+    font-size: $fz-90;
+    font-weight: $fw-black;
+    line-height: 1.1;
+    color: $sec-dark;
+    margin-bottom: 48px;
+  }
+  .blocks {
+    display: flex;
+    gap: 44px;
+  }
+  .advantages__block {
+    position: relative;
+    max-width: 770px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -7%;
+      left: -7%;
+      z-index: 1;
+      background-image: url("/assets/img/Webp/arrows-effect.webp");
+      background-repeat: no-repeat;
+      transform: scaleX(-1);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      bottom: -12%;
+      left: -7%;
+      z-index: 1;
+      background-image: url("/assets/img/Webp/arrows-effect-blue.webp");
+      background-repeat: no-repeat;
+    }
+
+    .block__inner {
+      padding: 40px 50px;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .block__item {
+        display: inline-flex;
+        gap: 30px;
+        align-items: flex-start;
+      }
+      div {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        h3 {
+          font-size: $fz-28;
+          font-weight: $fw-bold;
+        }
+        p {
+          font-size: $fz-20;
+          font-weight: $fw-regular;
+          line-height: 1.25;
+        }
+        span {
+          font-weight: $fw-bold;
+        }
+      }
+    }
+  }
+  .yellow {
+    background: $yellow;
+    border: 5px solid $primary;
+    border-radius: 40px;
+    background-color: $yellow;
+    box-shadow: 10px 15px 0px rgb(182, 147, 7, 1);
+    &::after {
+      display: none;
+    }
+  }
+  .blue {
+    position: relative;
+    background: $yellow;
+    border: 5px solid $primary;
+    border-radius: 40px;
+    background-color: $blue;
+    box-shadow: 10px 15px 0px rgb(#39a8e4, 1);
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .advantages {
+    .blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .advantages {
+    .advantages__block {
+      .block__inner {
+        padding: 30px 30px;
+      }
+      .block__item{
+        flex-direction: column;
+        text-align: justify;
+      }
+    }
+  }
+}

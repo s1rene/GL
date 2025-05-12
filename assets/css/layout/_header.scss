@@ -1,0 +1,133 @@
+.header {
+  bi-arrow-left {
+    width: 25px;
+    aspect-ratio: 1;
+  }
+  padding-block: 22px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.25;
+  }
+  &__nav {
+    margin: auto;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        border-right: 1px solid $sec-dark;
+        padding-right: 24px;
+        font-size: $fz-20;
+        font-weight: $fw-semi-bold;
+      }
+      li:last-child {
+        border: none;
+        padding-right: 0;
+      }
+    }
+  }
+  &__contact {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  &__social {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 8px;
+      border-radius: 5px;
+      width: 35px;
+      aspect-ratio: 1;
+    }
+    a#facebook {
+      background: $facebook-bg;
+    }
+    a#instagram {
+      background: $instagram-bg;
+    }
+    a#viber {
+      background: $viber-bg;
+    }
+  }
+  &__phone {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__numbers {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    a {
+      font-size: $fz-26;
+      font-weight: $fw-semi-bold;
+    }
+    .bi {
+      width: 24px;
+      aspect-ratio: 1;
+      color: $sec-dark;
+      padding: 0;
+      background-color: transparent;
+    }
+    .dropdown-menu {
+      padding: 15px;
+      position: absolute;
+      left: -23%;
+      top: 120%;
+      text-wrap: nowrap;
+      font-size: clamp(1.375rem, 1.35rem + 0.13vw, 1.5rem);
+      background-color: white;
+      border: 1px solid $sec-dark;
+      border-radius: 10px;
+      z-index: 4;
+      transform-origin: top center;
+      transform: scaleY(0);
+      pointer-events: none;
+      transition: transform 0.25s ease 0.1s;
+
+      li {
+        margin-bottom: 10px;
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .bi-chevron-down {
+      transition: transform 0.25s ease;
+      transform-origin: center;
+    }
+    &.open {
+      .dropdown-menu {
+        transform: scaleY(1);
+        pointer-events: auto;
+      }
+      .bi-chevron-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .header {
+    .header__inner {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}
+@media (max-width: 670px) {
+  .header__nav {
+    display: none;
+  }
+}
